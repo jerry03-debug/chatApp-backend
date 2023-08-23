@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Loubess</title>
+  </head>
+  <body>
+    <h1>Loubess</h1>
+    <div class="main">
+      <div class="name">
+        <span>icon</span>
+        <input
+          type="text"
+          name=""
+          id="name-input"
+          class="name-input"
+          value="anonymous"
+        />
+        <ul class="message-container" id="message-container">
+            <li class="message-left"> 
+                <p class="message">
+                    Lorem ipsum dolor sit amet consectetur adipisicing.
+                    <span>bluebird 23 aout 15:17</span>
+                </p>
+            </li>
+
+            <li class="message-right"> 
+                <p class="message">
+                    Lorem ipsum dolor sit amet consectetur adipisicing.
+                    <span>bluebird 23 aout 15:17</span>
+                </p>
+            </li>
+            <li class="message-feedback">
+                <p class="feedback" id="feedback">
+                    diery is typing a message...
+                </p>
+            </li>
+        </ul>
+
+        <form  class="message-form" id="message-form">
+            <input type="text" name="message" id="message-input" class="message-input" placeholder="type a message">
+            <div class="v-divider"></div>
+            <button type="submit" class="send-button" id="send-button">Send</button>
+        </form>
+
+        <h3 class="clients-total" id="clients-total">Total clients: 2</h3>
+
+
+      </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
