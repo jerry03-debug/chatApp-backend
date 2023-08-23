@@ -1,0 +1,19 @@
+{
+  "name": "chat-app-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jerry03-debug/chatApp-backend.git"
+  },
+  "author": "LHackSRT",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jerry03-debug/chatApp-backend/issues"
+  },
+  "homepage": "https://github.com/jerry03-debug/chatApp-backend#readme"
+}
