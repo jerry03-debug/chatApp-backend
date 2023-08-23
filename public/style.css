@@ -30,10 +30,11 @@ h1{
 }
 .name{
     display: flex;
-    font-size: 20px;
+    border-radius: 10px 10px 10px 10px;
+    font-size: 12px;
     font-weight: bolder;
     flex-direction: column;
-    padding:8px 16px;
+    padding:6px 6px;
     color:#7e7e7e;
     background-color: #ebebeb;
     gap: 20px;
@@ -71,7 +72,7 @@ h1{
     padding:8px 12px;
     margin:12px;
     max-width:250px;
-    font-size: 18px;
+    font-size: 20px;
     word-wrap: break-word;
     font-size: 15px;
     

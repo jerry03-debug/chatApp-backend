@@ -23,6 +23,17 @@ const onConnected = (socket) => {
     socket.on('disconnect', () => {
     console.log('Socket disconnected:', socket.id);
         socketsConnected.delete(socket.id);
+    io.emit('clients-total', socketsConnected.size);    
+
+    })
+
+    socket.on('message', (data) => {
+        console.log("message", data);
+        socket.broadcast.emit('chat-message', data);
+    })
+
+    socket.on('feedback', (data) => {
+        socket.broadcast.emit('feedback', data);
     })
 }
 
